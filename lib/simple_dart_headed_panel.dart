@@ -14,12 +14,11 @@ class HeadedPanel extends PanelComponent {
   Label header = Label()
     ..addCssClass('HeadedPanelHeader')
     ..visible = false
-    ..width = '100%'
-    ..padding = '10px';
+    ..width = '100%';
 
   Panel contentPanel = Panel()
+    ..addCssClass('HeadedPanelContent')
     ..spacing = '5px'
-    ..padding = '10px'
     ..vertical = true
     ..fillContent = true;
 
